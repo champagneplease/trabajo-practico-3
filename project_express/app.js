@@ -1,5 +1,4 @@
 const express = require("express"); //Crear una instancia de Express
-import express from "express";
 
 //Crear una instancia de Express
 const app = express();
@@ -12,13 +11,8 @@ app.get("/", (req, res) => {
   res.send("Hola Mundo!");
 });
 
-//Iniciar el servidor
-app.listen(puerto, () => {
-  console.log(`Servidor iniciado en el puerto ${puerto}`);
-});
-
 //Ruta GET para el home
-//solicitud http://localhost:3000/
+//solicitud http://localhost:3000/home
 
 app.get("/home", (req, res) => {
   res.send("Bienvenido a la pagina de inicio");
@@ -55,4 +49,9 @@ app.get("/filter", (req, res) => {
   res.send(
     `Hola, soy el resultado de la busqueda por ${type}, con un rango de precios. ${minPrice}-${maxPrice}`
   );
+});
+
+//Iniciar el servidor
+app.listen(puerto, () => {
+  console.log(`Servidor iniciado en el puerto ${puerto}`);
 });
