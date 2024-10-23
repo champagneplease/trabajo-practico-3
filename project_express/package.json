@@ -1,0 +1,16 @@
+{
+  "name": "practico-n3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "echo \"nacho miranda\" && exit 1"
+  },
+  "author": "Nacho Miranda",
+  "license": "ISC",
+  "description": "- Alumno: Miranda Juan Ignacio -",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {}
+}
