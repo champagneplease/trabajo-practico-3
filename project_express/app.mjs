@@ -1,4 +1,4 @@
-const express = require("express"); //Crear una instancia de Express
+import express from "express";
 
 //Crear una instancia de Express
 const app = express();
